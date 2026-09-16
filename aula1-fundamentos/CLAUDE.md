@@ -14,14 +14,15 @@ Projeto Node pequeno com funções utilitárias em `src/` e testes em `tests/`.
 
 ## Stack
 
-- TODO: linguagem e versão (dica: `node -v`)
-- TODO: como os módulos são importados (ESM ou CommonJS? olhe o `package.json`)
-- TODO: qual runner de testes (dica: olhe o script `test` do `package.json`)
+- Node.js 18+ (`engines` no `package.json`; confira com `node -v`)
+- ESM: `"type": "module"` no `package.json` — use `import`/`export`, nunca `require`
+- Runner de testes: `node:test` nativo (sem Jest/Mocha/Vitest)
 
 ## Comandos
 
-- TODO: comando pra rodar os testes
-- TODO: comando pra rodar os testes em watch
+- `npm test` — roda todos os testes uma vez (`node --test`)
+- `npm run test:watch` — roda os testes em modo watch (`node --test --watch`)
+- Um único arquivo: `node --test tests/validaCpf.test.js`
 
 ## Regras
 
